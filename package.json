@@ -7,12 +7,17 @@
     "test": "test"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "truffle test",
+    "server": "./node_modules/.bin/lite-server"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "jquery": "^3.3.1",
+    "lite-server": "^2.3.0",
+    "load-json-file": "^4.0.0",
     "sol-merge": "0.0.1",
+    "truffle-contract": "^3.0.4",
     "zeppelin-solidity": "^1.7.0"
   },
   "devDependencies": {

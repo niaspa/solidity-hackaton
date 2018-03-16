@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="/jquery/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="/truffle-contract/dist/truffle-contract.min.js"></script>
+  <script type=" text/javascript " src="/js/app.js "></script>
+</head>
+
+<body>
+  <p>
+    Current address
+    <span id="current_address">
+    </span>
+  </p>
+  <p>Balance of selected metamask user
+    <span id="balance_of"></span>
+  </p>
+
+  <button onclick="mintTokens()">Mint (generate) tokens</button>
+  <input type="text" name="mint_address" id="mint_address" placeholder="Receiving address">
+  <input type="text" name="mint" id="mint_amount" placeholder="Amount to send">
+  <br>
+  <button onclick="sendTokens()">Send tokens</button>
+  <input type="text" name="address" id="address_to_send" placeholder="Receiving address">
+  <input type="text" name="send" id="amount_to_send" placeholder="Amount to send">
+  <br>
+</body>
+
+<script>
+  getBalances();
+  getAddress();
+</script>
+
+</html>
